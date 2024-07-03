@@ -12,6 +12,7 @@
   font-weight: 400;
   font-size: 16px;
   font-family: "Inter", sans-serif;
+ 
 }
 
 .primary-btn {
@@ -218,12 +219,14 @@ header {
 
 .about-img {
   position: relative;
+  
 }
 
 .about-img img {
-  width: 568px;
-  height: 415px;
+  max-width: 568px;
+  max-height: 415px;
   border-radius: 32px;
+  overflow: hidden;
 }
 
 .about-overlay {
@@ -240,12 +243,69 @@ header {
 .section-content-container {
   display: flex;
   flex-direction: column;
-
+  max-width: 470px;
   gap: 16px;
+  overflow: visible;
 }
 
 .overlay-title {
   font-size: 26px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.service-section {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.service-content {
+  position: relative;
+}
+
+.service-content img {
+ 
+  max-width: 568px;
+  max-height: 415px;
+  border-radius: 32px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-content .overlay-title {
+  font-size: 20px;
+}
+
+.overlay-content-container {
+  width: 321px;
+  height: 144px;
+  padding: 18px;
+  background: rgb(2, 0, 67);
+  opacity: 0.6;
+  border-radius: 20px;
+  color: White;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  display: flex;
+}
+
+.overlay-icon-container {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.overlay-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffc637;
+  padding: 15px;
 }
