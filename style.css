@@ -370,14 +370,13 @@ header {
   margin-top: 40px;
 }
 
-.faq-container{
+.faq-container {
   padding: 8px 35px;
 }
 
 .ques-ans {
   border-radius: 8px;
   background: rgb(255, 255, 255);
-  
 }
 
 .line-border {
@@ -398,17 +397,69 @@ header {
   background-color: white;
 }
 
-.ques-container{
+.ques-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  background-color: #FFFFF5;
+  background-color: #fffff5;
   margin-top: 10px;
 }
 
-.ques-container img{
+.ques-container img {
   width: 9.73px;
-height: 16.5px;
-color: #323232;
+  height: 16.5px;
+  color: #323232;
+}
+
+.discount-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  border-radius: 32px;
+}
+
+.discount-section img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discount-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(
+    circle at 98% 78%,
+    rgb(2, 0, 67),
+    rgba(2, 0, 67, 0.3) 100%
+  );
+  border-radius: 32px;
+  top: 0;
+  padding: 60px;
+}
+
+.overlay-logo {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.overlay-logo img {
+  width: 124.82px;
+  height: 32.99px;
+}
+
+.discount-text {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fffff5;
+  width: 530px;
+  height: 180px;
+}
+
+.discount-overlay .primary-btn {
+  background: transparent;
+  color: white;
 }
